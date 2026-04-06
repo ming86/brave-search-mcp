@@ -1,7 +1,7 @@
 {
   "name": "brave-search-mcp",
   "version": "0.1.0",
-  "description": "MCP server for Brave Web Search - port of lmtools-brave-search VS Code extension",
+  "description": "MCP server for Brave Web Search",
   "main": "dist/index.js",
   "bin": {
     "brave-search-mcp": "dist/index.js"
