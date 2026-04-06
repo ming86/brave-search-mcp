@@ -1,6 +1,6 @@
 # brave-search-mcp
 
-An MCP server for web search via the Brave Search API. Port of the `braveWebSearch` LM tool from [lmtools-brave-search](https://github.com/ming86/lmtools-brave-search).
+An MCP server for web search via the Brave Search API.
 
 ## Purpose
 
