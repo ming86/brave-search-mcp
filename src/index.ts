@@ -15,7 +15,7 @@ server.tool(
   `Web search via Brave Search API. Returns JSON with title, description, and URL for each result.\n\nUse for: general information lookup, current events (with freshness or news filter), research.`,
   {
     query: z.string().min(1).max(400).describe('Search query (max 400 chars)'),
-    count: z.number().int().min(1).max(20).default(10).optional().describe('Number of results (1-20, default 10)'),
+    count: z.number().int().min(1).max(20).default(20).optional().describe('Number of results (1-20, default 20)'),
     freshness: z.string().optional().describe("Recency: 'pd' (24h), 'pw' (7d), 'pm' (31d), 'py' (365d), or 'YYYY-MM-DDtoYYYY-MM-DD'"),
     result_filter: z.array(z.enum(['discussions', 'faq', 'infobox', 'news', 'query', 'videos', 'web'])).default(['web']).optional().describe('Result types to return. Add "news" for current events.'),
     country: z.string().optional().describe('Country code for search results (e.g. "US", "GB")'),
